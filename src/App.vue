@@ -14,7 +14,7 @@ export default {
 </script>
 
 <template>
-  <div class="container-fluid px-0">
+  <div class="container-fluid px-0 main">
     <TheHeader></TheHeader>
     <router-view></router-view>
     <TheFooter></TheFooter>
@@ -22,5 +22,10 @@ export default {
 </template>
 
 <style lang="scss">
+@use "./styles/partials/_variables.scss" as *;
+
+.main{
+  background-color: $palette-bg-secondary;
+}
 
 </style>
