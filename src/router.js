@@ -5,29 +5,29 @@ import ChiSiamo from "./pages/ChiSiamo.vue";
 
 const routes = [
     {
-      path: "/contatti", 
-      name: "contatti",
-      component: ContattiPage
+        path: "/contatti",
+        name: "contatti",
+        component: ContattiPage
     },
     {
-        path: "/", 
+        path: "/",
         name: "home",
         component: Home
-      },
-      {
-        path: "/", 
+    },
+    {
+        path: "/chi-siamo",
         name: "chi-siamo",
         component: ChiSiamo
-      },
+    },
 ];
 
 
 const router = createRouter({
-   
+
     history: createWebHistory(),
-     
+
     routes
-  });
-  
-  
-  export { router };
+});
+
+
+export { router };
