@@ -18,6 +18,7 @@ export default {
     <TheHeader></TheHeader>
     <router-view></router-view>
     <TheFooter></TheFooter>
+    ciao
   </div>
 </template>
 
