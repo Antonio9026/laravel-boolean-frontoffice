@@ -15,13 +15,9 @@ export default {
 
 <template>
   <div class="container-fluid px-0">
-    <div class="row">
-      <div class="col">
-        <TheHeader></TheHeader>
-        <router-view></router-view>
-        <TheFooter></TheFooter>
-      </div>
-    </div>
+    <TheHeader></TheHeader>
+    <router-view></router-view>
+    <TheFooter></TheFooter>
   </div>
 </template>
 
