@@ -1,7 +1,12 @@
 <script>
 import axios from "axios";
+import Card from "../components/Card.vue";
 export default {
+    components: {
+        Card
+    },
     data() {
+
         return {
             cocktails: [],
         }
@@ -27,15 +32,8 @@ export default {
         <div class="row">
             <h1 class="py-3">Lista Cocktails</h1>
             <div class="col-3" v-for="cocktail in cocktails">
-                <div class="card text-center" style="width: 18rem;">
-                    <img :src="cocktail.thumb" class="card-img-top" alt="">
-                    <div class="card-body">
-                        <h5 class="card-title">{{ cocktail.name }}</h5>
-                        <p class="card-text">{{ cocktail.instructions }}</p>
-                    </div>
-                    <div class="card-footer">
-                    </div>
-                </div>
+                <Card :cocktail="cocktail" />
+
             </div>
         </div>
     </div>
