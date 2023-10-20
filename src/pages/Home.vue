@@ -23,7 +23,7 @@ export default {
 
 <template>
     <h1>Home</h1>
-    <div class="container vh-100">
+    <div class="container">
         <div class="row">
             <h1 class="py-3">Lista Cocktails</h1>
             <div class="col-3" v-for="cocktail in cocktails">
