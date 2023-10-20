@@ -16,6 +16,7 @@ export default {
             <img :src="cocktail.thumb" class="card-img-top" alt="">
             <div class="card-body">
                 <h5 class="card-title">{{ cocktail.name }}</h5>
+                <p class="card-text">{{ cocktail.category }}</p>
                 <p class="card-text">{{ cocktail.instructions }}</p>
             </div>
             <div class="card-footer">
@@ -25,4 +26,7 @@ export default {
 </template>
 
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+
+
+</style>
