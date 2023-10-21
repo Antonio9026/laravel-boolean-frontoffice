@@ -11,14 +11,16 @@ export default {
 </script>
 
 <template>
-    <div class="card rounded-0">
-        <div class="card rounded-0  text-center">
+    <div class="card up rounded-0">
+        <div class="card sub rounded-0  text-center">
             <div class="card-image">
                 <img :src="cocktail.thumb" class="card-img-top rounded-0" alt="">
             </div>
             <div class="card-body">
-                <h5 class="card-title">{{ cocktail.name }}</h5>
-                <p class="card-text">{{ cocktail.alcoholic }}</p>
+                <h5 class="card-title "><strong>{{ cocktail.name }}</strong></h5>
+                <div id="adult" class="card-image">
+                    <img src="../assets/images 18+.png" alt="">
+                </div>
                 <p class="card-text">{{ cocktail.category }}</p>
                 <p class="card-text">{{ cocktail.instructions }}</p>
             </div>
@@ -29,8 +31,9 @@ export default {
 
 
 <style lang="scss" scoped>
-.card{
-    width:250px;
+.card {
+    position: relative;
+    width: 250px;
     height: 100%;
     display: flex;
     align-items: center;
@@ -38,14 +41,27 @@ export default {
     // box-shadow: 5px 5px 2px 0;
 }
 
-.card:hover{
-    width:230px;
+.card:hover {
+    width: 250px;
     height: 100%;
     display: flex;
     align-items: center;
-    box-shadow: 5px 5px 5px 5px;
-   
+    box-shadow: 5px 5px 5px 5px black;
+    background: rgb(28, 27, 27);
+    background: linear-gradient(90deg, rgba(28, 27, 27, 1) 0%, rgba(42, 37, 32, 0.7917366775811887) 100%);
+    color: white;
 }
 
+#adult {
+    width: 20px;
+    position: absolute;
+    top: 10px;
+    right: 10px; 
+}
 
+#adult img {
+    width: 100%;
+    border-radius: 60%;
+
+}
 </style>
