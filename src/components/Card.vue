@@ -7,7 +7,20 @@ export default {
             required: true
         }
     },
-}
+    methods: {
+        fetchData() {
+            axios
+                .get("http://127.0.0.1:8000/api/cocktails")
+                .then((response) => {
+                    this.cocktails = response.data;
+                });
+        },
+    },
+    mounted() {
+        this.fetchData();
+    },
+};
+
 </script>
 
 <template>
@@ -21,6 +34,9 @@ export default {
                 <div id="adult" class="card-image">
                     <img src="../assets/images 18+.png" alt="">
                 </div>
+                <ul v-for="cocktails in cocktail.ingredients">
+                    <li>{{ cocktail.ingredients }}</li>
+                </ul>
                 <p class="card-text">{{ cocktail.category }}</p>
                 <p class="card-text">{{ cocktail.instructions }}</p>
             </div>
@@ -38,7 +54,7 @@ export default {
     display: flex;
     align-items: center;
     font-size: 10px;
-    // box-shadow: 5px 5px 2px 0;
+   
 }
 
 .card:hover {
