@@ -33,7 +33,7 @@ export default {
 <style lang="scss" scoped>
 .card {
     position: relative;
-    width: 250px;
+    max-width: 250px;
     height: 100%;
     display: flex;
     align-items: center;

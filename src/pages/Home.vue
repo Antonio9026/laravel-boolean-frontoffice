@@ -30,7 +30,7 @@ export default {
     <div class="container overflow-auto">
         <div class="row">
             <h1 class="py-3 text-center">Lista Cocktails</h1>
-            <div class="col-3 my-4 px-2" v-for="cocktail in cocktails">
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 gap-3 d-flex justify-content-center my-3" v-for="cocktail in cocktails">
                 <Card :cocktail="cocktail" />
 
             </div>
