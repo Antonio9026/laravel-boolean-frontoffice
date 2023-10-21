@@ -1,12 +1,18 @@
 <script>
 
 export default {
+    data() {
+        return {
+            arraiedIngridients: [],
+        }
+    },
     props: {
         cocktail: {
             type: Object,
             required: true
         }
     },
+    
     methods: {
         fetchData() {
             axios
@@ -15,9 +21,13 @@ export default {
                     this.cocktails = response.data;
                 });
         },
+        arrayfyIngredients(){
+            this.arraiedIngridients = this.cocktail.ingredients.replace(/\[|\]|\"/g,'');
+        }
     },
     mounted() {
         this.fetchData();
+        this.arrayfyIngredients();
     },
 };
 
@@ -34,8 +44,8 @@ export default {
                 <div id="adult" class="card-image">
                     <img src="../assets/images 18+.png" alt="">
                 </div>
-                <ul v-for="cocktails in cocktail.ingredients">
-                    <li>{{ cocktail.ingredients }}</li>
+                <ul>
+                    <li v-for='singleIngredient in this.cocktail.ingredients.replace(/\[|\]|\"/g,"").split(",")'>{{ singleIngredient }}</li>
                 </ul>
                 <p class="card-text">{{ cocktail.category }}</p>
                 <p class="card-text">{{ cocktail.instructions }}</p>
