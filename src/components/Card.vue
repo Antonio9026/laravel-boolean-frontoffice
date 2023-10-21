@@ -21,13 +21,9 @@ export default {
                     this.cocktails = response.data;
                 });
         },
-        arrayfyIngredients(){
-            this.arraiedIngridients = this.cocktail.ingredients.replace(/\[|\]|\"/g,'');
-        }
     },
     mounted() {
         this.fetchData();
-        this.arrayfyIngredients();
     },
 };
 
