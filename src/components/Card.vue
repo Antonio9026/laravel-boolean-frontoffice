@@ -30,7 +30,7 @@ export default {
                     <img src="../assets/images 18+.png" alt="">
                 </div>
 
-                <ul>
+                <ul class="ps-0">
                     <li class="list-unstyled"
                         v-for='singleIngredient in this.cocktail.ingredients.replace(/\[|\]|\"/g, "").split(",")'><i
                             class="fa-solid fa-flask" style="margin-right: 10px;"></i>{{ singleIngredient }}</li>
