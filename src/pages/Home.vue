@@ -27,7 +27,7 @@ export default {
 </script>
 
 <template>
-    <div class="container">
+    <div class="container overflow-auto">
         <div class="row">
             <h1 class="py-3 text-center">Lista Cocktails</h1>
             <div class="col-3 my-4 px-2" v-for="cocktail in cocktails">
