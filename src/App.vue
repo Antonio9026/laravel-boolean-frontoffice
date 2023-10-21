@@ -1,6 +1,6 @@
 <script>
-import TheHeader from "./components/TheHeader.vue"
-import TheFooter from "./components/TheFooter.vue"
+import TheHeader from "./components/TheHeader.vue";
+import TheFooter from "./components/TheFooter.vue";
 
 export default {
   components: {
@@ -8,25 +8,23 @@ export default {
     TheFooter,
   },
   data() {
-    return {}
-  }
-}
+    return {};
+  },
+};
 </script>
 
 <template>
-  <div class="container-fluid px-0 main">
-    <TheHeader></TheHeader>
+  <TheHeader></TheHeader>
+  <div class="container-fluid p-0 m-0 main">
     <router-view></router-view>
-    <TheFooter></TheFooter>
-    ciao1
   </div>
+  <TheFooter></TheFooter>
 </template>
 
 <style lang="scss">
 @use "./styles/partials/_variables.scss" as *;
 
-.main{
+.main {
   background-color: $palette-bg-secondary;
 }
-
 </style>
