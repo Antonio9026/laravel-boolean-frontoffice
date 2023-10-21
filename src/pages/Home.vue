@@ -30,7 +30,7 @@ export default {
     <div class="container">
         <div class="row">
             <h1 class="py-3">Lista Cocktails</h1>
-            <div class="col-3" v-for="cocktail in cocktails">
+            <div class="col-3 py-4 px-3" v-for="cocktail in cocktails">
                 <Card :cocktail="cocktail" />
 
             </div>
@@ -38,4 +38,7 @@ export default {
     </div>
 </template>
 
-<style lang="scss"></style>
+<style lang="scss">
+
+
+</style>
