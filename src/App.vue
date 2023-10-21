@@ -24,6 +24,7 @@ export default {
 <style lang="scss">
 @use "./styles/partials/_variables.scss" as *;
 
+//
 .main {
   background-color: $palette-bg-secondary;
 }
