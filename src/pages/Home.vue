@@ -44,11 +44,15 @@ export default {
 <style lang="scss">
 @use "../styles/partials/_variables.scss" as *;
 
-.title-box{
-    width: fit-content;
-    border-color: $palette-text-color;
-    .title{
-        font-size: 3.5rem;
+.container{
+    margin-top: 92px;
+    min-height: calc(100vh - 92px);
+    .title-box{
+        width: fit-content;
+        border-color: $palette-text-color;
+        .title{
+            font-size: 3.5rem;
+        }
     }
 }
 

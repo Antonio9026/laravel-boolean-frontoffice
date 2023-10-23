@@ -5,6 +5,8 @@ export default {
 </script>
 
 <template>
+<div class="container">
+
 
   <!-- About section The Company
   <div class="about-section px-4 py-5" style="background-color: #111117;">
@@ -55,10 +57,10 @@ export default {
                 </div>
                 <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
               </div>
-            </div>
-          </div>
-
-          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            </div> 
+          </div>-->
+          <h1>Blank test - WIP</h1>
+          <!-- <div class="d-grid gap-2 d-md-flex justify-content-md-start">
             <button type="button" class="btn btn-outline-light text-icons-color border border-icons-color px-4 me-3 custom-button-hover">GET IN TOUCH</button>
             <button type="button" class="btn btn-outline-light text-icons-color border border-icons-color px-4 custom-button-hover">READ MORE</button>
           </div>
@@ -69,11 +71,16 @@ export default {
       </div>
     </div>
   </div> -->
+</div>
 
 </template>
 
 <style lang="scss" scoped>
 
+.container{
+    margin-top: 92px;
+    min-height: calc(100vh - 214px);
+}
 // .about-section {
 //   background: 
 //     linear-gradient(to left, transparent 50%, #111117 50%), 

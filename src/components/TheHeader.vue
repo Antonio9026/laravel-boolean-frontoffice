@@ -11,7 +11,7 @@ export default {
 <template>
   <header class="bg-dark">
     <nav class="container-fluid">
-      <div class="row py-3 d-flex">
+      <div class="fixed-top navbar row py-3 d-flex bg-dark">
         <div class="col-md-9 d-flex align-items-center justify-content-between mx-auto px-0">
           <a href="/">
             <img src="https://riegsecurity.com/wp-content/uploads/2019/09/Riegs-D-Class-Feat.png" alt="header-logo">
