@@ -28,12 +28,12 @@ export default {
 
 <template>
     <div class="container overflow-auto">
-        <div class="d-flex justify-content-center my-3 mb-4">
-            <div class="title-box border-bottom border-secondary">
+        <div class="d-flex justify-content-center my-4 mt-5 mb-5">
+            <div class="title-box border-bottom border-3 border-secondary">
                 <h1 class="py-3 text-center pb-0 fw-bold title">La nostra Lista Cocktails</h1>
             </div>
         </div>
-        <div class="row">
+        <div class="row d-flex justify-content-center">
             <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 gap-3 d-flex justify-content-center my-3" v-for="cocktail in cocktails">
                 <Card :cocktail="cocktail" />
             </div>
@@ -48,7 +48,7 @@ export default {
     width: fit-content;
     border-color: $palette-text-color;
     .title{
-        font-size: 3rem;
+        font-size: 3.5rem;
     }
 }
 

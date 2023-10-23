@@ -26,6 +26,6 @@ export default {
 
 //
 .main {
-  background-color: $palette-bg-secondary;
+  background-color: $palette-bg-primary;
 }
 </style>
