@@ -5,8 +5,6 @@ export default {
 </script>
 
 <template>
-<div class="container mt-0">
-
 
   <!-- Hero About Section -->
   <div class="px-4 py-5 text-center" style="background-color: #dfbf92;">
@@ -188,7 +186,7 @@ export default {
       </div>
     </div>
   </div>
-</div>
+
 
 </template>
 
