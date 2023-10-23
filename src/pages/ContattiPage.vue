@@ -28,7 +28,7 @@ export default {
 </script>
 
 <template>
-    <div class="container">
+    <div class="container mt--0">
         <div class="row">
             <h1 class="pt-5">Contattaci!</h1>
 
@@ -63,7 +63,7 @@ export default {
 
 <style lang="scss" scoped>
 .container{
-    margin-top: 92px;
+    margin-top: 40px;
     min-height: calc(100vh - 214px);
 }
 </style>

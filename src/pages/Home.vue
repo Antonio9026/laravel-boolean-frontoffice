@@ -27,9 +27,9 @@ export default {
 </script>
 
 <template>
-    <div class="container overflow-auto pb-5">
+    <div class="container overflow-auto pb-5 mt-0">
         <div class="d-flex justify-content-center my-4 mt-5 mb-5">
-            <div class="title-box border-bottom border-3 border-secondary">
+            <div class="title-box">
                 <h1 class="py-3 text-center pb-0 fw-bold title">La nostra Lista Cocktails</h1>
             </div>
         </div>
@@ -41,15 +41,16 @@ export default {
     </div>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @use "../styles/partials/_variables.scss" as *;
 
 .container{
-    margin-top: 92px;
+    margin-top: 40px;
     min-height: calc(100vh - 92px);
     .title-box{
         width: fit-content;
-        border-color: $palette-text-color;
+        border-bottom: 5px;
+        border-color: rgb(33, 37, 41);
         .title{
             font-size: 3.5rem;
         }

@@ -12,32 +12,47 @@ export default {
             required: true
         }
     },
-
-
+    methods: {
+        /* changeDisplayOnHover(param){
+            if(param === "Hover"){
+                return "d-block";
+            }
+            else{
+                return "d-none";
+            } */
+    }
 };
 
 </script>
 
 <template>
-    <div class="card up border-0 rounded-0">
-        <div class="card sub rounded-0 ">
+    <div class="card up rounded-0">
+        <div class="card sub border-0 rounded-0">
             <div class="card-image">
                 <img :src="cocktail.thumb" class="card-img-top rounded-0" alt="">
             </div>
-            <div class="card-body">
-                <h5 class="card-title "><strong>{{ cocktail.name }}</strong></h5>
+            <div class="card-body w-100">
+                <div class="row">
+                    <div class="col-9 d-flex align-items-center">
+                        <h5 class="card-title p-0"><strong>{{ cocktail.name }}</strong></h5>
+                    </div>
+                    <div class="col-3 d-flex align-items-start">
+                        <span class="text-decoration-underline">€{{ cocktail.price }}</span>
+                    </div>
+                </div>
+                
                 <div id="adult" class="card-image">
                     <img src="../assets/images 18+.png" alt="">
                 </div>
 
-                <ul class="ps-0">
+                <ul class="ps-0 hidden-on-hover">
                     <li class="list-unstyled"
                         v-for='singleIngredient in this.cocktail.ingredients.replace(/\[|\]|\"/g, "").split(",")'><i
                             class="fa-solid fa-flask" style="margin-right: 10px;"></i>{{ singleIngredient }}</li>
                 </ul>
 
-                <p class="card-text">{{ cocktail.category }}</p>
-                <p class="card-text">{{ cocktail.instructions }}</p>
+                <p class="card-text hidden-on-hover">{{ cocktail.category }}</p>
+                <p class="card-text instructions">{{ cocktail.instructions }}</p>
             </div>
 
         </div>
@@ -57,8 +72,6 @@ export default {
 }
 
 .card:hover {
-    width: 250px;
-    height: 100%;
     display: flex;
     align-items: center;
     box-shadow: 5px 5px 5px 5px black;
@@ -66,6 +79,22 @@ export default {
     background: linear-gradient(90deg, rgba(28, 27, 27, 1) 0%, rgba(42, 37, 32, 0.7917366775811887) 100%);
     color: white;
     transition: 0.25s linear;
+}
+
+.instructions{
+    display: none;
+}
+.card:hover {
+    .instructions{
+        display: block;
+        transition: 1s;
+
+    }
+    .hidden-on-hover{
+        display: none;
+        transition: 1s;
+    }
+
 }
 
 #adult {

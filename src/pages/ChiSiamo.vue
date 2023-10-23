@@ -5,7 +5,7 @@ export default {
 </script>
 
 <template>
-<div class="container">
+<div class="container mt-0">
 
 
   <!-- About section The Company
@@ -78,7 +78,7 @@ export default {
 <style lang="scss" scoped>
 
 .container{
-    margin-top: 92px;
+    margin-top: 40px;
     min-height: calc(100vh - 214px);
 }
 // .about-section {
