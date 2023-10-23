@@ -27,7 +27,7 @@ export default {
 </script>
 
 <template>
-    <div class="container overflow-auto">
+    <div class="container overflow-auto pb-5">
         <div class="d-flex justify-content-center my-4 mt-5 mb-5">
             <div class="title-box border-bottom border-3 border-secondary">
                 <h1 class="py-3 text-center pb-0 fw-bold title">La nostra Lista Cocktails</h1>
