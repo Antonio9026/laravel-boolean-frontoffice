@@ -35,7 +35,7 @@ export default {
   </div>
 
   <!-- Carousel Section -->
-  <div id="carouselExampleControls" class="carousel slide" data-mdb-ride="carousel">
+  <div id="carouselExampleControls" class="carousel slide" data-mdb-ride="carousel" data-mdb-interval="3000">
     <div class="carousel-inner">
       <div class="carousel-item active">
         <img src="/public/pexels-1.jpg" class="d-block w-100" alt="img-1"/>
@@ -65,7 +65,7 @@ export default {
 
   <!-- Why Us Section -->
   <div class="container-fluid py-5" style="background-color: #9c7858;">
-    <h2 class="text-center text-white mb-3"><span>PERCHÈ SCEGLIERE IL D CLASS</span></h2>
+    <h2 class="text-center text-white mb-3">PERCHÈ SCEGLIERE IL D CLASS</h2>
     <div class="col-lg-6 mx-auto text-center mb-4">
       <div class="d-flex justify-content-center">
         <hr class="w-25">
@@ -76,7 +76,7 @@ export default {
         <div class="row">
           <div class="col-3">
             <div>
-              <h3 class="h5 mb-3">MENU VARIEGATO</h3>
+              <h3 class="h5 fw-bold mb-3">MENU VARIEGATO</h3>
               <p class="lead">
                 Nel nostro menu troverai una selezione di cocktail provenienti 
                 da diverse parti del mondo, dalla tradizione italiana e francese 
@@ -86,7 +86,7 @@ export default {
           </div>
           <div class="col-3">
             <div>
-              <h3 class="h5 mb-3">AMBIENTE ACCOGLIENTE</h3>
+              <h3 class="h5 fw-bold mb-3">AMBIENTE ACCOGLIENTE</h3>
               <p class="lead">
                 Al nostro cocktail bar, l'atmosfera è avvolta da soffitti a volta e 
                 ricche texture che creano un ambiente accogliente, permettendo ai 
@@ -96,7 +96,7 @@ export default {
           </div>
           <div class="col-3">
             <div>
-              <h3 class="h5 mb-3">CONSEGNA GRATUITA</h3>
+              <h3 class="h5 fw-bold mb-3">CONSEGNA GRATUITA</h3>
               <p class="lead">
                 Se non hai tempo di venire al nostro cocktail bar, ti portiamo i tuoi 
                 drink preferiti direttamente a casa tua, senza costi aggiuntivi per la consegna.
@@ -105,7 +105,7 @@ export default {
           </div>
           <div class="col-3">
             <div>
-              <h3 class="h5 mb-3">SERVIZIO ECCELLENTE</h3>
+              <h3 class="h5 fw-bold mb-3">SERVIZIO ECCELLENTE</h3>
               <p class="lead">
                 La nostra dedizione verso i clienti ci spinge a offrire un servizio di prima classe 
                 per assicurarci che tutti siano soddisfatti.
