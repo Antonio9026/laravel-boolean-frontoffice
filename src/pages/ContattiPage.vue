@@ -14,12 +14,12 @@ export default {
     },
     methods: {
         onFormSubmit() {
-            axios.post("http://http://localhost:5174/api/contacts", this.formData)
+            axios.post("http://localhost:8000/api/contacts", this.formData)
             .then((resp) => {
                 this.success = resp.data.message;
                 this.errors = null;
             })
-            .catch(e => {
+            .catch((e) => {
                 this.errors = e.response?.data?.message ?? e.message;
             })
         }
