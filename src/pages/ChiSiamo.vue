@@ -13,31 +13,54 @@ export default {
       <div class="d-flex justify-content-center">
         <hr class="w-25">
       </div>
-      <h2>Come join us for a lunch, dinner or a drink.</h2>
+      <h2>Aperitivi e Dopocene da urlo, in stile D Class</h2>
     </div>
 
     <div class="col-lg-6 mx-auto">
       <p class="lead mb-4">
-        Benvenuto nel nostro mondo di cocktail artigianali e mixology innovativa.
-        Se ami l'arte di creare e degustare cocktail unici, sei nel posto giusto. 
-        Presso il nostro cocktail e mixology bar, ci dedichiamo a mescolare ingredienti 
-        di alta qualità con tecniche all'avanguardia per offrirti esperienze di degustazione indimenticabili.
-        Ogni nostro cocktail è una creazione originale, curata nei minimi dettagli per soddisfare i palati più esigenti. 
-        Utilizziamo solo gli ingredienti più freschi e pregiati, selezionati con cura 
-        per garantirti un'esperienza gustativa senza pari. La nostra equipe di barman esperti 
-        è appassionata nel creare nuove e innovative bevande, portando avanti la tradizione 
-        della mixology con un tocco moderno.
-        Presso il nostro locale, non offriamo solo cocktail straordinari, ma anche un'atmosfera unica e accogliente. 
-        Il nostro personale cordiale e professionale è pronto ad accoglierti 
-        e guidarti attraverso un viaggio sensoriale nel mondo dei sapori. 
-        Che tu sia un appassionato di cocktail o un neofita curioso, ti garantiamo un'esperienza 
-        che stimolerà i tuoi sensi e ti lascerà desiderare sempre di più.
-        Vieni a trovarci e scopri il fascino dei nostri cocktail artigianali. 
-        Siamo più di un semplice bar, siamo un destino per gli amanti della mixology e un rifugio 
-        per coloro che cercano emozioni in ogni sorso. 
-        Ti aspettiamo per farti vivere l'arte dei cocktail come mai prima d'ora.
+        Benvenuto nel nostro mondo di cocktail artigianali e mixology innovativa! Da noi, 
+        l'arte di creare e gustare cocktail unici raggiunge nuove vette di eccellenza. 
+        Ogni nostro cocktail è una piccola opera d'arte, frutto di ingredienti selezionati 
+        con cura e mescolati con passione da barman esperti. La nostra missione? Offrirti 
+        esperienze di degustazione indimenticabili, soddisfacendo anche i palati più esigenti.
+        Dietro ogni sorso c'è una storia, una tradizione rivisitata con un tocco moderno. 
+        La freschezza dei nostri ingredienti ti farà viaggiare attraverso sapori e profumi unici, 
+        mentre il nostro staff, amichevole e professionale, ti guiderà in un viaggio sensoriale 
+        che ti lascerà desiderare sempre di più.
+        Vieni a trovarci, scopri il fascino dei nostri cocktail artigianali e immergiti nel mondo 
+        avvolgente della mixology. Ti aspettiamo per farti vivere l'arte dei cocktail come mai prima d'ora.
+        Unisciti a noi, il tuo viaggio nel gusto sta per iniziare!
       </p>
     </div>
+  </div>
+
+  <!-- Carousel Section -->
+  <div id="carouselExampleControls" class="carousel slide" data-mdb-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="/public/pexels-1.jpg" class="d-block w-100" alt="img-1"/>
+      </div>
+      <div class="carousel-item">
+        <img src="/public/pexels-2.jpg" class="d-block w-100" alt="img-2"/>
+      </div>
+      <div class="carousel-item">
+        <img src="/public/pexels-3.jpg" class="d-block w-100" alt="img-3"/>
+      </div>
+      <div class="carousel-item">
+        <img src="/public/pexels-4.jpg" class="d-block w-100" alt="img-4"/>
+      </div>
+      <div class="carousel-item">
+        <img src="/public/pexels-5.jpg" class="d-block w-100" alt="img-5"/>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-mdb-target="#carouselExampleControls" data-mdb-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-mdb-target="#carouselExampleControls" data-mdb-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
   </div>
 
   <!-- Why Us Section -->
@@ -54,7 +77,7 @@ export default {
           <div class="col-3">
             <div>
               <h3 class="h5 mb-3">MENU VARIEGATO</h3>
-              <p>
+              <p class="lead">
                 Nel nostro menu troverai una selezione di cocktail provenienti 
                 da diverse parti del mondo, dalla tradizione italiana e francese 
                 all'innovazione dei mix thailandesi e giapponesi.
@@ -64,7 +87,7 @@ export default {
           <div class="col-3">
             <div>
               <h3 class="h5 mb-3">AMBIENTE ACCOGLIENTE</h3>
-              <p>
+              <p class="lead">
                 Al nostro cocktail bar, l'atmosfera è avvolta da soffitti a volta e 
                 ricche texture che creano un ambiente accogliente, permettendo ai 
                 nostri ospiti di sentirsi a proprio agio e immersi nella magia dei drink.
@@ -74,7 +97,7 @@ export default {
           <div class="col-3">
             <div>
               <h3 class="h5 mb-3">CONSEGNA GRATUITA</h3>
-              <p>
+              <p class="lead">
                 Se non hai tempo di venire al nostro cocktail bar, ti portiamo i tuoi 
                 drink preferiti direttamente a casa tua, senza costi aggiuntivi per la consegna.
               </p>
@@ -83,7 +106,7 @@ export default {
           <div class="col-3">
             <div>
               <h3 class="h5 mb-3">SERVIZIO ECCELLENTE</h3>
-              <p>
+              <p class="lead">
                 La nostra dedizione verso i clienti ci spinge a offrire un servizio di prima classe 
                 per assicurarci che tutti siano soddisfatti.
                 Ci impegniamo al massimo per garantirti un'esperienza indimenticabile 
@@ -108,28 +131,44 @@ export default {
             <img src="/public/lporrega.JPG" alt="lorenzo-porrega" class="img-fluid mb-3">
             <h3 class="mb-2">Lorenzo Porrega</h3>
             <p class="text-muted mb-0">PROJECT MANAGER</p>
-            <p class="mb-0">As Executive Chef of our restaurant, she brings extensive knowledge and leadership to the kitchen. She has more than 22 years of experience in the restaurant industry, with the last 14 years as an executive chef.</p>
+            <p class="mb-0">
+              Project manager creativo e organizzato qui per trasformare il caos in progetti 
+              impeccabili!
+              Inoltre, è sempre disponibile a creare server minecraft per tutti i gusti.
+              Affidati a lui, renderà ogni idea un meme!
+            </p>
           </div>
 
           <div class="col-md-6 mb-4">
             <img src="/public/apiras.JPG" alt="antonio-piras" class="img-fluid mb-3">
             <h3 class="mb-2">Antonio Piras</h3>
             <p class="text-muted mb-0">MIXOLOGIST</p>
-            <p class="mb-0">Committed to teamwork demonstrating integrity and honesty while interacting with guests, team members, and managers. Follows company safety standards at all times.</p>
+            <p class="mb-0">
+              Direttamente dalla Sardegna, mixologist appassionato e creativo pronto a trasformare 
+              ogni sorso di codice PHP in un'avventura! 
+              Con un tocco di magia e un pizzico di genialità, crea cocktail unici e template geniali. 
+            </p>
           </div>
 
           <div class="col-md-6 mb-4">
             <img src="/public/ivelikholova.JPG" alt="iryna-velykholova" class="img-fluid mb-3">
             <h3 class="mb-2">Iryna Velykholova</h3>
             <p class="text-muted mb-0">INTERIOR DESIGNER & WEB DESIGNER</p>
-            <p class="mb-0">A member of our restaurant's family for more than 15 years, she has worked every position here, giving it a unique management perspective. She has a lifelong passion for the restaurant business.</p>
+            <p class="mb-0"> 
+              Interior designer e web designer creativa, trasforma spazi in opere d'arte e 
+              idee in esperienze digitali coinvolgenti, tutto in tema pedestre.
+              Passione, innovazione e bellezza guidano ogni suo progetto.
+            </p>
           </div>
 
           <div class="col-md-6 mb-4">
             <img src="/public/dfusco.JPG" alt="dario-fusco" class="img-fluid mb-3">
             <h3 class="mb-2">Dario Fusco</h3>
             <p class="text-muted mb-0">SENIOR FULL STACK DEVELOPER</p>
-            <p class="mb-0">He establishes books for food lovers, gives interviews, comes to the most famous TV shows. He is a real celebrity!</p>
+            <p class="mb-0">
+              Cresciuto da Boolean, dopo soli 6 mesi di corso, è già in grado di gestire il database di Amazon Italia,
+              e nel tempo libero si diletta a creare corsi specialistici su VueJS.
+            </p>
           </div>
         </div>
 
@@ -137,11 +176,13 @@ export default {
           <div class="col-md-6 mb-4">
             <img src="/public/acolombo.JPG" alt="andrea-colombo" class="img-fluid mb-3">
             <h3 class="mb-2">Andrea Colombo</h3>
-            <p class="text-muted mb-0">MENTAL COACH</p>
-            <p class="mb-0">He establishes books for food lovers, gives interviews, comes to the most famous TV shows. He is a real celebrity!</p>
+            <p class="text-muted mb-0">MENTAL COACH & CODE ASSISTANT</p>
+            <p class="mb-0">
+              Presentato come Leader autoproclamato, pensa di essere d'aiuto al team, di essere simpatico...
+              Ci prova a scrivere codice, ma in realtà è l'esempio perfetto di TANTO FUMO E POCO ARROSTO!
+            </p>
           </div>
         </div>
-        <hr class="w-100 mt-3">
       </div>
     </div>
   </div>
