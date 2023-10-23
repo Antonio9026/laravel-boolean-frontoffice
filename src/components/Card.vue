@@ -1,18 +1,26 @@
 <script>
 
 export default {
+    data() {
+        return {
+            arraiedIngridients: [],
+        }
+    },
     props: {
         cocktail: {
             type: Object,
             required: true
         }
     },
-}
+
+
+};
+
 </script>
 
 <template>
     <div class="card up rounded-0">
-        <div class="card sub rounded-0  text-center">
+        <div class="card sub rounded-0 ">
             <div class="card-image">
                 <img :src="cocktail.thumb" class="card-img-top rounded-0" alt="">
             </div>
@@ -21,6 +29,13 @@ export default {
                 <div id="adult" class="card-image">
                     <img src="../assets/images 18+.png" alt="">
                 </div>
+
+                <ul class="ps-0">
+                    <li class="list-unstyled"
+                        v-for='singleIngredient in this.cocktail.ingredients.replace(/\[|\]|\"/g, "").split(",")'><i
+                            class="fa-solid fa-flask" style="margin-right: 10px;"></i>{{ singleIngredient }}</li>
+                </ul>
+
                 <p class="card-text">{{ cocktail.category }}</p>
                 <p class="card-text">{{ cocktail.instructions }}</p>
             </div>
@@ -38,7 +53,7 @@ export default {
     display: flex;
     align-items: center;
     font-size: 10px;
-    // box-shadow: 5px 5px 2px 0;
+
 }
 
 .card:hover {
@@ -56,7 +71,7 @@ export default {
     width: 20px;
     position: absolute;
     top: 10px;
-    right: 10px; 
+    right: 10px;
 }
 
 #adult img {
