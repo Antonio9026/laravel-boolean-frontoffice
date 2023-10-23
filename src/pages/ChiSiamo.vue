@@ -7,7 +7,7 @@ export default {
 <template>
 
   <!-- Hero About Section -->
-  <div class="px-4 py-5 text-center" style="background-color: #f1d9b7;">
+  <div class="px-4 py-5 text-center" style="background-color: #dfbf92;">
     <h1 class="display-5 fw-bold text-body-emphasis text-center mb-2">Chi Siamo</h1>
     <div class="col-lg-6 mx-auto text-center mb-4">
       <div class="d-flex justify-content-center">
@@ -64,15 +64,15 @@ export default {
   </div>
 
   <!-- Why Us Section -->
-  <div class="container-fluid py-5" style="background-color: #e8cfac;">
-    <h2 class="text-center mb-3"><span>PERCHÈ SCEGLIERE NOI</span></h2>
+  <div class="container-fluid py-5" style="background-color: #9c7858;">
+    <h2 class="text-center text-white mb-3"><span>PERCHÈ SCEGLIERE IL D CLASS</span></h2>
     <div class="col-lg-6 mx-auto text-center mb-4">
       <div class="d-flex justify-content-center">
         <hr class="w-25">
       </div>
     </div>
     <div class="row">
-      <div class="col-lg-9 mx-auto">
+      <div class="col-lg-9 mx-auto text-white">
         <div class="row">
           <div class="col-3">
             <div>
@@ -178,7 +178,7 @@ export default {
             <h3 class="mb-2">Andrea Colombo</h3>
             <p class="text-muted mb-0">MENTAL COACH & CODE ASSISTANT</p>
             <p class="mb-0">
-              Presentato come Leader autoproclamato, pensa di essere d'aiuto al team, di essere simpatico...
+              Leader autoproclamato, pensa di essere d'aiuto al team, di essere professionale...
               Ci prova a scrivere codice, ma in realtà è l'esempio perfetto di TANTO FUMO E POCO ARROSTO!
             </p>
           </div>
@@ -232,6 +232,18 @@ export default {
 
 .bottom {
   bottom: -72px;
+}
+
+#carouselExampleControls {
+  width: 100%;
+  height: 900px;
+  overflow: hidden;
+}
+
+.carousel-inner .carousel-item img {
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover;
 }
 
 </style>
