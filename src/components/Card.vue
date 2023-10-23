@@ -19,7 +19,7 @@ export default {
 </script>
 
 <template>
-    <div class="card up rounded-0">
+    <div class="card up border-0 rounded-0">
         <div class="card sub rounded-0 ">
             <div class="card-image">
                 <img :src="cocktail.thumb" class="card-img-top rounded-0" alt="">
@@ -53,7 +53,7 @@ export default {
     display: flex;
     align-items: center;
     font-size: 10px;
-
+    transition: 0.5s linear;
 }
 
 .card:hover {
@@ -65,6 +65,7 @@ export default {
     background: rgb(28, 27, 27);
     background: linear-gradient(90deg, rgba(28, 27, 27, 1) 0%, rgba(42, 37, 32, 0.7917366775811887) 100%);
     color: white;
+    transition: 0.25s linear;
 }
 
 #adult {
