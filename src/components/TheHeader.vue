@@ -10,7 +10,7 @@ export default {
 
 <template>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3" aria-label="Eighth navbar example">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark py-2" aria-label="Eighth navbar example">
       <div class="container">
         <a class="navbar-brand" href="#">
           <img src="https://riegsecurity.com/wp-content/uploads/2019/09/Riegs-D-Class-Feat.png" alt="header-logo">

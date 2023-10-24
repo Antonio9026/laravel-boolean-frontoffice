@@ -45,7 +45,7 @@ export default {
 @use "../styles/partials/_variables.scss" as *;
 
 .container{
-    margin-top: 40px;
+    margin-top: 86px;
     min-height: calc(100vh - 92px);
     .title-box{
         width: fit-content;

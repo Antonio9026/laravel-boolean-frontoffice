@@ -78,7 +78,7 @@ export default {
 <style lang="scss" scoped>
 
 .container{
-    margin-top: 40px;
+    margin-top: 86px;
     min-height: calc(100vh - 214px);
 }
 // .about-section {
