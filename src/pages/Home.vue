@@ -39,10 +39,11 @@ export default {
 
 <template>
     <div class="container overflow-auto pb-5">
+        <h3 class="my-4">Cerca qui il tuo cocktail preferito</h3>
         <form class="my-4" @submit.prevent="onSearch" @reset="onReset">
-            <input type="text" placeholder="Nome cocktail" class="form-control" v-model="search.name">
-            <button class="btn btn-primary" type="submit">Cerca</button>
-            <button class="btn btn-primary" type="reset">Cancella</button>
+            <input type="text" placeholder="Nome cocktail" class="form-control" style="width: 430px;" v-model="search.name">
+            <button class="btn btn-dark my-2 " type="submit" >Cerca</button>
+            <button class="btn btn-danger mx-2" type="reset">Cancella</button>
         </form>
         <div class="d-flex justify-content-center my-4 mt-5 mb-5">
             <div class="title-box">
