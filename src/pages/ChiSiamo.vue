@@ -254,13 +254,13 @@ export default {
 
 #carouselExampleControls {
   width: 100%;
-  height: 810px;
+  height: 720px;
   overflow: hidden;
 }
 
 .carousel-inner .carousel-item img {
   width: 100%; 
-  height: 100%; 
+  height: 720px; 
   object-fit: cover;
 }
 
