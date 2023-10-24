@@ -1,4 +1,7 @@
 <script>
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+
 export default {
 
 }
@@ -35,32 +38,44 @@ export default {
   </div>
 
   <!-- Carousel Section -->
-  <div id="carouselExampleControls" class="carousel slide" data-mdb-ride="carousel" data-mdb-interval="3000">
-    <div class="carousel-inner">
+  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+
+  <ul class="carousel-indicators">
+      <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+      <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+      <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+      <li data-bs-target="#myCarousel" data-bs-slide-to="3"></li>
+      <li data-bs-target="#myCarousel" data-bs-slide-to="4"></li>
+  </ul>
+
+  <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="/public/pexels-1.jpg" class="d-block w-100" alt="img-1"/>
+        <img src="/public/pexels-1.jpg" alt="Image 1">
       </div>
+
       <div class="carousel-item">
-        <img src="/public/pexels-2.jpg" class="d-block w-100" alt="img-2"/>
+        <img src="/public/pexels-2.jpg" alt="Image 2">
       </div>
+
       <div class="carousel-item">
-        <img src="/public/pexels-3.jpg" class="d-block w-100" alt="img-3"/>
+        <img src="/public/pexels-3.jpg" alt="Image 3">
       </div>
+
       <div class="carousel-item">
-        <img src="/public/pexels-4.jpg" class="d-block w-100" alt="img-4"/>
+        <img src="/public/pexels-4.jpg" alt="Image 4">
       </div>
+
       <div class="carousel-item">
-        <img src="/public/pexels-5.jpg" class="d-block w-100" alt="img-5"/>
+        <img src="/public/pexels-5.jpg" alt="Image 5">
       </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-mdb-target="#carouselExampleControls" data-mdb-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-mdb-target="#carouselExampleControls" data-mdb-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
+  </div>
+
+  <a class="carousel-control-prev" href="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+  </a>
   </div>
 
   <!-- Why Us Section -->
@@ -239,13 +254,13 @@ export default {
 
 #carouselExampleControls {
   width: 100%;
-  height: 900px;
+  height: 720px;
   overflow: hidden;
 }
 
 .carousel-inner .carousel-item img {
   width: 100%; 
-  height: 100%; 
+  height: 720px; 
   object-fit: cover;
 }
 
