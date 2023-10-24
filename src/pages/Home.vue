@@ -27,7 +27,7 @@ export default {
 </script>
 
 <template>
-    <div class="container overflow-auto pb-5 mt-0">
+    <div class="container overflow-auto pb-5">
         <div class="d-flex justify-content-center my-4 mt-5 mb-5">
             <div class="title-box">
                 <h1 class="py-3 text-center pb-0 fw-bold title">La nostra Lista Cocktails</h1>
@@ -46,7 +46,7 @@ export default {
 
 .container{
     margin-top: 86px;
-    min-height: calc(100vh - 92px);
+    min-height: calc(100vh - 122px);
     .title-box{
         width: fit-content;
         border-bottom: 5px;

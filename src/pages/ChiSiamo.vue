@@ -5,9 +5,9 @@ export default {
 </script>
 
 <template>
-
+<div class="chi-siamo-container">
   <!-- Hero About Section -->
-  <div class="px-4 py-5 text-center" style="background-color: #dfbf92;">
+  <div class="px-4 py-5 text-center hero-section" style="background-color: #dfbf92;">
     <h1 class="display-5 fw-bold text-body-emphasis text-center mb-2">Chi Siamo</h1>
     <div class="col-lg-6 mx-auto text-center mb-4">
       <div class="d-flex justify-content-center">
@@ -186,14 +186,14 @@ export default {
       </div>
     </div>
   </div>
-
+</div>
 
 </template>
 
 <style lang="scss" scoped>
 
-.container{
-    margin-top: 40px;
+.chi-siamo-container{
+    margin-top: 86px;
     min-height: calc(100vh - 214px);
 }
 .about-section {
@@ -201,7 +201,6 @@ export default {
     linear-gradient(to left, transparent 50%, #dfc39d 50%),
     url(../assets/images/about-4.jpg) no-repeat right center;
   object-fit: contain;
-  min-height: 100vh;
   background-position: center right;
   position: relative;
 }

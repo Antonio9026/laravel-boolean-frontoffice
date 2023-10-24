@@ -26,6 +26,6 @@ export default {
 
 //
 .main {
-  background-color: $palette-bg-primary;
+  background-color: $palette-chi-siamo;
 }
 </style>
