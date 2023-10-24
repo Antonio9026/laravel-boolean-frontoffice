@@ -73,7 +73,7 @@ export default {
             </div>
         </div>
         
-        <div class="d-flex justify-content-center my-4">
+        <div class="d-flex justify-content-center my-4 pb-4">
             <div class="row w-100 d-flex justify-content-center">
                 <div class="col-8 border-bottom border-dark border-1 d-flex justify-content-center">
                     <div class="title-box pb-2">
