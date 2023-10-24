@@ -19,7 +19,7 @@ export default {
       <h2>Aperitivi e Dopocene da urlo, in stile D Class</h2>
     </div>
 
-    <div class="col-lg-6 mx-auto">
+    <div class="col-lg-7 mx-auto">
       <p class="lead mb-4">
         Benvenuto nel nostro mondo di cocktail artigianali e mixology innovativa! Da noi, 
         l'arte di creare e gustare cocktail unici raggiunge nuove vette di eccellenza. 
@@ -50,23 +50,23 @@ export default {
 
   <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="/public/pexels-1.jpg" alt="Image 1">
+        <img src="/pexels-1.jpg" alt="Image 1">
       </div>
 
       <div class="carousel-item">
-        <img src="/public/pexels-2.jpg" alt="Image 2">
+        <img src="/pexels-2.jpg" alt="Image 2">
       </div>
 
       <div class="carousel-item">
-        <img src="/public/pexels-3.jpg" alt="Image 3">
+        <img src="/pexels-3.jpg" alt="Image 3">
       </div>
 
       <div class="carousel-item">
-        <img src="/public/pexels-4.jpg" alt="Image 4">
+        <img src="/pexels-4.jpg" alt="Image 4">
       </div>
 
       <div class="carousel-item">
-        <img src="/public/pexels-5.jpg" alt="Image 5">
+        <img src="/pexels-5.jpg" alt="Image 5">
       </div>
   </div>
 
@@ -80,7 +80,7 @@ export default {
 
   <!-- Why Us Section -->
   <div class="container-fluid py-5" style="background-color: #9c7858;">
-    <h2 class="text-center text-white mb-3">PERCHÈ SCEGLIERE IL D CLASS</h2>
+    <h2 class="text-center text-white mb-3 fw-bold">PERCHÉ SCEGLIERE IL D CLASS</h2>
     <div class="col-lg-6 mx-auto text-center mb-4">
       <div class="d-flex justify-content-center">
         <hr class="w-25">
@@ -89,7 +89,7 @@ export default {
     <div class="row">
       <div class="col-lg-9 mx-auto text-white">
         <div class="row">
-          <div class="col-3">
+          <div class="col-12 col-sm-12 col-md-6 col-lg-3">
             <div>
               <h3 class="h5 fw-bold mb-3">MENU VARIEGATO</h3>
               <p class="lead">
@@ -99,7 +99,7 @@ export default {
               </p>
             </div>
           </div>
-          <div class="col-3">
+          <div class="col-12 col-sm-12 col-md-6 col-lg-3">
             <div>
               <h3 class="h5 fw-bold mb-3">AMBIENTE ACCOGLIENTE</h3>
               <p class="lead">
@@ -109,7 +109,7 @@ export default {
               </p>
             </div>
           </div>
-          <div class="col-3">
+          <div class="col-12 col-sm-12 col-md-6 col-lg-3">
             <div>
               <h3 class="h5 fw-bold mb-3">CONSEGNA GRATUITA</h3>
               <p class="lead">
@@ -118,7 +118,7 @@ export default {
               </p>
             </div>
           </div>
-          <div class="col-3">
+          <div class="col-12 col-sm-12 col-md-6 col-lg-3">
             <div>
               <h3 class="h5 fw-bold mb-3">SERVIZIO ECCELLENTE</h3>
               <p class="lead">
@@ -138,13 +138,13 @@ export default {
   <div class="container-fluid py-5" style="background-color: #dfbf92;">
     <div class="row">
       <div class="col-lg-8 mx-auto text-center">
-        <h2 class="mb-4">Il Nostro Team</h2>
+        <h2 class="mb-4 fw-bold fs-1">Il Nostro Team</h2>
         <hr class="w-100 mb-4">
 
-        <div class="row mt-5">
+        <div class="row team-members-box mt-5 justify-content-center">
           <div class="col-md-6 mb-4">
-            <img src="/public/lporrega.JPG" alt="lorenzo-porrega" class="img-fluid mb-3">
-            <h3 class="mb-2">Lorenzo Porrega</h3>
+            <img src="/lporrega.JPG" alt="lorenzo-porrega" class="img-fluid mb-3">
+            <h3 class="mb-2 fw-bold">Lorenzo Porrega</h3>
             <p class="text-muted mb-0">PROJECT MANAGER</p>
             <p class="mb-0">
               Project manager creativo e organizzato qui per trasformare il caos in progetti 
@@ -155,8 +155,8 @@ export default {
           </div>
 
           <div class="col-md-6 mb-4">
-            <img src="/public/apiras.JPG" alt="antonio-piras" class="img-fluid mb-3">
-            <h3 class="mb-2">Antonio Piras</h3>
+            <img src="/apiras.JPG" alt="antonio-piras" class="img-fluid mb-3">
+            <h3 class="mb-2 fw-bold">Antonio Piras</h3>
             <p class="text-muted mb-0">MIXOLOGIST</p>
             <p class="mb-0">
               Direttamente dalla Sardegna, mixologist appassionato e creativo pronto a trasformare 
@@ -166,8 +166,8 @@ export default {
           </div>
 
           <div class="col-md-6 mb-4">
-            <img src="/public/ivelikholova.JPG" alt="iryna-velykholova" class="img-fluid mb-3">
-            <h3 class="mb-2">Iryna Velykholova</h3>
+            <img src="/ivelikholova.JPG" alt="iryna-velykholova" class="img-fluid mb-3">
+            <h3 class="mb-2 fw-bold">Iryna Velykholova</h3>
             <p class="text-muted mb-0">INTERIOR DESIGNER & WEB DESIGNER</p>
             <p class="mb-0"> 
               Interior designer e web designer creativa, trasforma spazi in opere d'arte e 
@@ -177,20 +177,18 @@ export default {
           </div>
 
           <div class="col-md-6 mb-4">
-            <img src="/public/dfusco.JPG" alt="dario-fusco" class="img-fluid mb-3">
-            <h3 class="mb-2">Dario Fusco</h3>
+            <img src="/dfusco.JPG" alt="dario-fusco" class="img-fluid mb-3">
+            <h3 class="mb-2 fw-bold">Dario Fusco</h3>
             <p class="text-muted mb-0">SENIOR FULL STACK DEVELOPER</p>
             <p class="mb-0">
               Cresciuto da Boolean, dopo soli 6 mesi di corso, è già in grado di gestire il database di Amazon Italia,
               e nel tempo libero si diletta a creare corsi specialistici su VueJS.
             </p>
           </div>
-        </div>
 
-        <div class="row mt-2 justify-content-center">
           <div class="col-md-6 mb-4">
-            <img src="/public/acolombo.JPG" alt="andrea-colombo" class="img-fluid mb-3">
-            <h3 class="mb-2">Andrea Colombo</h3>
+            <img src="/acolombo.JPG" alt="andrea-colombo" class="img-fluid">
+            <h3 class="mb-2 fw-bold">Andrea Colombo</h3>
             <p class="text-muted mb-0">MENTAL COACH & CODE ASSISTANT</p>
             <p class="mb-0">
               Leader autoproclamato, pensa di essere d'aiuto al team, di essere professionale...
@@ -206,6 +204,7 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use "../styles/partials/_variables.scss" as *;
 
 .chi-siamo-container{
     margin-top: 86px;
@@ -250,6 +249,18 @@ export default {
 
 .bottom {
   bottom: -72px;
+}
+
+.team-members-box img{
+  border-radius: 50%;
+  border: 3px $palette-bg-secondary-darkest;
+}
+
+// Risolto problemi puntini neri opachi sotto le barre bianche indicanti l'immagine attiva nel carosello
+.carousel-indicators{
+  li{
+    color: transparent;
+  }
 }
 
 #carouselExampleControls {
