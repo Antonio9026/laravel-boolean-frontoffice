@@ -17,7 +17,7 @@ export default {
     methods: {
         fetchData() {
             axios
-                .get("http://127.0.0.1:8000/api/cocktails",{ params: this.search,})
+                .get("http://127.0.0.1:8000/api/cocktails", { params: this.search, })
                 .then((response) => {
                     this.cocktails = response.data;
                 });
@@ -25,7 +25,10 @@ export default {
 
         onSearch() {
             this.fetchData();
-
+        },
+        onReset() {
+            this.search.name = "";
+            this.fetchData();
         },
     },
     mounted() {
@@ -36,7 +39,7 @@ export default {
 
 <template>
     <div class="container overflow-auto pb-5">
-        <form class="my-4" @submit.prevent="onSearch">
+        <form class="my-4" @submit.prevent="onSearch" @reset="onReset">
             <input type="text" placeholder="Nome cocktail" class="form-control" v-model="search.name">
             <button class="btn btn-primary" type="submit">Cerca</button>
             <button class="btn btn-primary" type="reset">Cancella</button>
