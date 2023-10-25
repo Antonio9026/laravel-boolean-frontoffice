@@ -56,7 +56,7 @@ export default {
                             <span class="fw-bold">Ricerca cocktail per nome</span>
                         </button>
                         </h2>
-                        <div id="collapseOne" class="accordion-collapse show collapse position-absolute z-3 w-100" data-bs-parent="#accordionExample">
+                        <div id="collapseOne" class="accordion-collapse collapse position-absolute z-3 w-100" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                 <h3 class="mb-1">Cerca qui il tuo cocktail preferito:</h3>
                                 <form class="my-3" @submit.prevent="onSearch" @reset="onReset">
@@ -97,7 +97,7 @@ export default {
 
 .container {
     margin-top: 86px;
-    min-height: calc(100vh - 122px);
+    min-height: calc(100vh - 208px);
     .accordion-button{
         border-color: $palette-bg-secondary-dark;
         background-color: $palette-bg-secondary-darker;

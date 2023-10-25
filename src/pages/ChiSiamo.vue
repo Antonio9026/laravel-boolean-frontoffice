@@ -208,7 +208,7 @@ export default {
 
 .chi-siamo-container{
     margin-top: 86px;
-    min-height: calc(100vh - 214px);
+    min-height: calc(100vh - 208px);
 }
 .about-section {
   background:
